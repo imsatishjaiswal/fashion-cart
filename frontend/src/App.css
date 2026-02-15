@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.logo-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #e84393;
+  letter-spacing: 1px;
+}
+.logo-style {
+  font-family: 'Pacifico', cursive; /* Decorative font just for f */
+  font-size: 2rem;
+  color: #e84393;
+}
+
+.logo-c-style {
+  font-size: 2rem;
+  color: #e84393;
+}
