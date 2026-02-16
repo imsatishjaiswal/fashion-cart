@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -7,8 +7,8 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         // For now, just log the values
-        console.log("Email:", email);
-        console.log("Password:", password);
+        // console.log("Email:", email);
+        // console.log("Password:", password);
         let apiUrl = "http://localhost:5000/api/auth/login";
         const response = await fetch(apiUrl, {
             method: "POST",
@@ -88,7 +88,12 @@ function Login() {
                 >
                     Submit
                 </button>
+                <div>
+                <Link to="/signup" className="font-bold text-pink-400">New to fashionCart? Create an account</Link>
+
+                </div>    
             </form>
+            
         </>
     );
 }
